@@ -18,7 +18,6 @@ exports.unsafeRenderStateHandler = function(key) {
   return function(f) {
     return function(state) {
       if (module.hot) {
-        window.unsafeStateBank = {};
         if (!window.unsafeStateBank) {
           window.unsafeStateBank = {};
         }
